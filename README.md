@@ -1,2 +1,9 @@
-# melatonin
- Firefox color theme based on Catppuccin
+# Melatonin
+
+Melatonin is a Firefox theme based on Catppuccin and Firacode.
+
+## Screenshots
+
+![inspector](/screenshots/inspector.png)
+![console](/screenshots/console.png)
+![debugger](/screenshots/debugger.png)

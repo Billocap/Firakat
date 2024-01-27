@@ -1,0 +1,318 @@
+@import "font/firacode.css";
+@import "catppuccin/macchiato.css";
+
+/* Tab bar */
+@-moz-document url-prefix("about:devtools-toolbox") {
+  :root.theme-dark {
+    /* ------ Colors -------- */
+    --theme-comment: var(--macchiato-subtext) !important;
+    --theme-sidebar-background: var(--macchiato-mantle) !important;
+    --theme-tab-toolbar-background: var(--macchiato-crust) !important;
+
+    /* Button Colors */
+    --theme-button-background: var(--macchiato-base) !important;
+    --theme-button-active-background: var(--macchiato-surface0) !important;
+
+    /* Selection Colors */
+    --theme-selection-background: var(--macchiato-surface0) !important;
+    --theme-selection-background-hover: var(--macchiato-surface0) !important;
+    --theme-selection-focus-background: var(--macchiato-surface1) !important;
+    --theme-selection-color: var(--macchiato-text) !important;
+
+    /* Popup Colors */
+    --theme-popup-background: var(--macchiato-base) !important;
+    --theme-popup-color: var(--macchiato-text) !important;
+    --theme-popup-border-color: var(--macchiato-crust) !important;
+    --theme-popup-dimmed: var(--macchiato-subtext) !important;
+
+    /* Stack Trace */
+    --theme-stack-trace-text: var(--macchiato-red) !important;
+
+    /* Selected Element Color */
+    --theme-select-background: var(--macchiato-overlay0) !important;
+    --theme-select-color: var(--macchiato-text) !important;
+    --theme-select-hover-border-color: var(--macchiato-overlay1) !important;
+
+    /* Console Colors */
+    --theme-warning-background: var(--macchiato-yellow-10) !important;
+    --theme-warning-border: var(--macchiato-yellow-50) !important;
+    --theme-warning-color: var(--macchiato-yellow) !important;
+
+    --console-error-background: var(--macchiato-red-10) !important;
+    --console-error-border: var(--macchiato-red-50) !important;
+    --console-error-color: var(--macchiato-red) !important;
+
+    /* Accordion Colors */
+    --theme-accordion-header-background: var(--macchiato-base) !important;
+    --theme-accordion-header-hover: var(--macchiato-surface0) !important;
+
+    /* Body Colors */
+    --theme-body-background: var(--macchiato-base) !important;
+    --theme-body-emphasized-background: var(--macchiato-surface0) !important;
+    --theme-body-alternate-emphasized-background: var(
+      --macchiato-surface1
+    ) !important;
+
+    /* Contrast Colors */
+    --theme-contrast-background: var(--macchiato-crust) !important;
+    --theme-contrast-background-alpha: var(--macchiato-surface0) !important;
+    --theme-contrast-color: var(--macchiato-text) !important;
+    --theme-contrast-border: var(--macchiato-yellow) !important;
+
+    /* Splitter Colors */
+    --theme-splitter-color: var(--macchiato-crust) !important;
+    --theme-emphasized-splitter-color: var(--macchiato-surface0) !important;
+    --theme-emphasized-splitter-color-hover: var(
+      --macchiato-surface1
+    ) !important;
+
+    /* Toolbar Colors */
+    --tab-line-hover-color: var(--macchiato-overlay0) !important;
+    --tab-line-selected-color: var(--macchiato-mauve) !important;
+    --theme-toolbar-background: var(--macchiato-crust) !important;
+    --theme-toolbar-color: var(--macchiato-overlay0) !important;
+    --theme-toolbar-selected-color: var(--macchiato-mauve) !important;
+    --theme-toolbar-highlighted-color: var(--macchiato-green) !important;
+    --theme-toolbar-background-hover: var(--macchiato-base) !important;
+    --theme-toolbar-background-alt: var(--macchiato-base) !important;
+    --theme-toolbar-background-highlighted: var(--macchiato-mauve) !important;
+    --theme-toolbar-error-background: var(--macchiato-red) !important;
+    --theme-toolbar-hover: var(--macchiato-surface0) !important;
+    --theme-toolbar-hover-active: var(--macchiato-surface1) !important;
+    --theme-toolbar-separator: transparent !important;
+
+    /* Toolbar Button Colors */
+    --theme-toolbarbutton-background: var(--macchiato-crust) !important;
+    --theme-toolbarbutton-color: var(--macchiato-overlay0) !important;
+    --theme-toolbarbutton-hover-background: var(--macchiato-base) !important;
+    --theme-toolbarbutton-checked-background: var(--macchiato-base) !important;
+    --theme-toolbarbutton-checked-color: var(--macchiato-sapphire) !important;
+    --theme-toolbarbutton-checked-hover-background: var(
+      --macchiato-surface0
+    ) !important;
+    --theme-toolbarbutton-checked-hover-color: var(
+      --macchiato-sapphire
+    ) !important;
+    --theme-toolbarbutton-active-background: var(--macchiato-base) !important;
+    --theme-toolbarbutton-active-color: var(--macchiato-mauve) !important;
+
+    --toolbarbutton-background: var(--macchiato-crust) !important;
+    --toolbarbutton-hover-background: var(--macchiato-base) !important;
+    --toolbarbutton-focus-background: var(--macchiato-surface0) !important;
+    --toolbarbutton-focus-color: var(--macchiato-mauve) !important;
+    --toolbarbutton-checked-background: var(--macchiato-base) !important;
+    --toolbarbutton-checked-focus-background: var(
+      --macchiato-sapphire
+    ) !important;
+    --toolbarbutton-checked-color: var(--macchiato-text) !important;
+
+    /* General UI */
+    --theme-tab-toolbar-background: var(--macchiato-mantle) !important;
+    --theme-selection-background: var(--macchiato-surface0) !important;
+    --theme-selection-color: var(--macchiato-text) !important;
+
+    /* Icon Colors */
+    --theme-icon-color: var(--macchiato-text) !important;
+    --theme-icon-dimmed-color: var(--macchiato-overlay0) !important;
+    --theme-icon-checked-color: var(--macchiato-sapphire) !important;
+    --theme-icon-error-color: var(--macchiato-red) !important;
+    --theme-icon-warning-color: var(--macchiato-yellow) !important;
+
+    /* Text Colors */
+    --theme-body-color: var(--macchiato-text) !important;
+    --theme-body-color-alt: var(--macchiato-subtext) !important;
+    --theme-content-color1: var(--macchiato-overlay0) !important;
+    --theme-content-color2: var(--macchiato-overlay1) !important;
+    --theme-content-color3: var(--macchiato-overlay2) !important;
+    --theme-link-color: var(--macchiato-sapphire) !important;
+    --theme-text-color-alt: var(--macchiato-subtext) !important;
+    --theme-text-color-inactive: var(--macchiato-overlay0) !important;
+    --theme-text-color-error: var(--macchiato-red) !important;
+    --theme-text-color-strong: var(--macchiato-lavender) !important;
+
+    /* Code Highlight Colors */
+    --theme-highlight-blue: var(--macchiato-blue) !important;
+    --theme-highlight-purple: var(--macchiato-mauve) !important;
+    --theme-highlight-pink: var(--macchiato-pink) !important;
+    --theme-highlight-red: var(--macchiato-red) !important;
+    --theme-highlight-orange: var(--macchiato-peach) !important;
+    --theme-highlight-lightorange: var(--macchiato-rosewater) !important;
+    --theme-highlight-green: var(--macchiato-green) !important;
+    --theme-highlight-bluegrey: var(--macchiato-lavender) !important;
+    --theme-highlight-yellow: var(--macchiato-yellow) !important;
+
+    /* Timing Graphs Colors */
+    --theme-graphs-purple: var(--macchiato-mauve) !important;
+    --theme-graphs-yellow: var(--macchiato-yellow) !important;
+    --theme-graphs-orange: var(--macchiato-peach) !important;
+    --theme-graphs-grey: var(--macchiato-overlay0) !important;
+    --theme-graphs-full-red: var(--macchiato-red) !important;
+  }
+
+  .toolbox-tabs .devtools-tab.selected {
+    background-color: var(--macchiato-base) !important;
+  }
+}
+
+/* Tab contents */
+@-moz-document url-prefix("chrome://devtools/content/")
+{
+  :root.theme-dark {
+    --theme-body-font-size: 10px !important;
+    --theme-code-font-size: 10px !important;
+
+    /* ------ Colors -------- */
+    --theme-comment: var(--macchiato-subtext) !important;
+    --theme-sidebar-background: var(--macchiato-mantle) !important;
+    --theme-tab-toolbar-background: var(--macchiato-crust) !important;
+
+    /* Button Colors */
+    --theme-button-background: var(--macchiato-base) !important;
+    --theme-button-active-background: var(--macchiato-surface0) !important;
+
+    /* Selection Colors */
+    --theme-selection-background: var(--macchiato-surface0) !important;
+    --theme-selection-background-hover: var(--macchiato-surface0) !important;
+    --theme-selection-focus-background: var(--macchiato-surface1) !important;
+    --theme-selection-color: var(--macchiato-text) !important;
+
+    /* Popup Colors */
+    --theme-popup-background: var(--macchiato-base) !important;
+    --theme-popup-color: var(--macchiato-text) !important;
+    --theme-popup-border-color: var(--macchiato-crust) !important;
+    --theme-popup-dimmed: var(--macchiato-subtext) !important;
+
+    /* Stack Trace */
+    --theme-stack-trace-text: var(--macchiato-red) !important;
+
+    /* Selected Element Color */
+    --theme-select-background: var(--macchiato-overlay0) !important;
+    --theme-select-color: var(--macchiato-text) !important;
+    --theme-select-hover-border-color: var(--macchiato-overlay1) !important;
+
+    /* Console Colors */
+    --theme-warning-background: var(--macchiato-yellow-10) !important;
+    --theme-warning-border: var(--macchiato-yellow-50) !important;
+    --theme-warning-color: var(--macchiato-yellow) !important;
+
+    --console-error-background: var(--macchiato-red-10) !important;
+    --console-error-border: var(--macchiato-red-50) !important;
+    --console-error-color: var(--macchiato-red) !important;
+
+    /* Accordion Colors */
+    --rule-header-background-color: var(--macchiato-base) !important;
+    --theme-accordion-header-background: var(--macchiato-base) !important;
+    --theme-accordion-header-hover: var(--macchiato-surface0) !important;
+
+    /* Body Colors */
+    --theme-body-background: var(--macchiato-base) !important;
+    --theme-body-emphasized-background: var(--macchiato-surface0) !important;
+    --theme-body-alternate-emphasized-background: var(
+      --macchiato-surface1
+    ) !important;
+
+    /* Contrast Colors */
+    --theme-contrast-background: var(--macchiato-crust) !important;
+    --theme-contrast-background-alpha: var(--macchiato-surface0) !important;
+    --theme-contrast-color: var(--macchiato-text) !important;
+    --theme-contrast-border: var(--macchiato-yellow) !important;
+
+    /* Splitter Colors */
+    --theme-splitter-color: var(--macchiato-crust) !important;
+    --theme-emphasized-splitter-color: var(--macchiato-surface0) !important;
+    --theme-emphasized-splitter-color-hover: var(
+      --macchiato-surface1
+    ) !important;
+
+    /* Toolbar Colors */
+    --tab-line-hover-color: var(--macchiato-overlay0) !important;
+    --tab-line-selected-color: var(--macchiato-mauve) !important;
+    --theme-toolbar-background: var(--macchiato-crust) !important;
+    --theme-toolbar-color: var(--macchiato-overlay0) !important;
+    --theme-toolbar-selected-color: var(--macchiato-mauve) !important;
+    --theme-toolbar-highlighted-color: var(--macchiato-green) !important;
+    --theme-toolbar-background-hover: var(--macchiato-base) !important;
+    --theme-toolbar-background-alt: var(--macchiato-base) !important;
+    --theme-toolbar-background-highlighted: var(--macchiato-mauve) !important;
+    --theme-toolbar-error-background: var(--macchiato-red) !important;
+    --theme-toolbar-hover: var(--macchiato-surface0) !important;
+    --theme-toolbar-hover-active: var(--macchiato-surface1) !important;
+    --theme-toolbar-separator: transparent !important;
+
+    /* Toolbar Button Colors */
+    --theme-toolbarbutton-background: var(--macchiato-crust) !important;
+    --theme-toolbarbutton-color: var(--macchiato-overlay0) !important;
+    --theme-toolbarbutton-hover-background: var(--macchiato-base) !important;
+    --theme-toolbarbutton-checked-background: var(--macchiato-base) !important;
+    --theme-toolbarbutton-checked-color: var(--macchiato-sapphire) !important;
+    --theme-toolbarbutton-checked-hover-background: var(
+      --macchiato-surface0
+    ) !important;
+    --theme-toolbarbutton-checked-hover-color: var(
+      --macchiato-sapphire
+    ) !important;
+    --theme-toolbarbutton-active-background: var(--macchiato-base) !important;
+    --theme-toolbarbutton-active-color: var(--macchiato-mauve) !important;
+
+    --toolbarbutton-background: var(--macchiato-crust) !important;
+    --toolbarbutton-hover-background: var(--macchiato-base) !important;
+    --toolbarbutton-focus-background: var(--macchiato-surface0) !important;
+    --toolbarbutton-focus-color: var(--macchiato-mauve) !important;
+    --toolbarbutton-checked-background: var(--macchiato-base) !important;
+    --toolbarbutton-checked-focus-background: var(
+      --macchiato-sapphire
+    ) !important;
+    --toolbarbutton-checked-color: var(--macchiato-text) !important;
+
+    /* General UI */
+    --theme-tab-toolbar-background: var(--macchiato-mantle) !important;
+    --theme-selection-background: var(--macchiato-surface0) !important;
+    --theme-selection-color: var(--macchiato-text) !important;
+
+    /* Icon Colors */
+    --theme-icon-color: var(--macchiato-text) !important;
+    --theme-icon-dimmed-color: var(--macchiato-overlay0) !important;
+    --theme-icon-checked-color: var(--macchiato-sapphire) !important;
+    --theme-icon-error-color: var(--macchiato-red) !important;
+    --theme-icon-warning-color: var(--macchiato-yellow) !important;
+
+    /* Text Colors */
+    --theme-body-color: var(--macchiato-text) !important;
+    --theme-body-color-alt: var(--macchiato-subtext) !important;
+    --theme-content-color1: var(--macchiato-overlay0) !important;
+    --theme-content-color2: var(--macchiato-overlay1) !important;
+    --theme-content-color3: var(--macchiato-overlay2) !important;
+    --theme-link-color: var(--macchiato-sapphire) !important;
+    --theme-text-color-alt: var(--macchiato-subtext) !important;
+    --theme-text-color-inactive: var(--macchiato-overlay0) !important;
+    --theme-text-color-error: var(--macchiato-red) !important;
+    --theme-text-color-strong: var(--macchiato-lavender) !important;
+
+    /* Code Highlight Colors */
+    --theme-highlight-blue: var(--macchiato-blue) !important;
+    --theme-highlight-purple: var(--macchiato-mauve) !important;
+    --theme-highlight-pink: var(--macchiato-pink) !important;
+    --theme-highlight-red: var(--macchiato-red) !important;
+    --theme-highlight-orange: var(--macchiato-peach) !important;
+    --theme-highlight-lightorange: var(--macchiato-rosewater) !important;
+    --theme-highlight-green: var(--macchiato-green) !important;
+    --theme-highlight-bluegrey: var(--macchiato-lavender) !important;
+    --theme-highlight-yellow: var(--macchiato-yellow) !important;
+
+    /* Timing Graphs Colors */
+    --theme-graphs-purple: var(--macchiato-mauve) !important;
+    --theme-graphs-yellow: var(--macchiato-yellow) !important;
+    --theme-graphs-orange: var(--macchiato-peach) !important;
+    --theme-graphs-grey: var(--macchiato-overlay0) !important;
+    --theme-graphs-full-red: var(--macchiato-red) !important;
+  }
+
+  .devtools-monospace {
+    font-family: Firacode NF Mono !important;
+  }
+
+  .tabs .tabs-menu-item.is-active,
+  .source-tabs .source-tab.active {
+    background-color: var(--macchiato-base) !important;
+  }
+}

@@ -1,5 +1,44 @@
 @import "../catppuccin/latte.css";
 
+/* App Bar */
+:root.theme-light {
+  --lwt-accent-color: var(--latte-crust) !important;
+  --lwt-text-color: var(--latte-text) !important;
+  --lwt-additional-images: url("../decals/latte/decal-right.png") !important,
+    url("../decals/latte/decal-center.png") !important,
+    url("../decals/latte/decal-left.png") !important;
+
+  --arrowpanel-background: var(--latte-base) !important;
+  --arrowpanel-color: var(--latte-text) !important;
+
+  --toolbar-field-background-color: var(--latte-crust) !important;
+  --toolbar-bgcolor: var(--latte-base) !important;
+  --toolbar-color: var(--latte-mauve) !important;
+  --toolbar-field-color: var(--latte-text) !important;
+  --toolbar-field-border-color: var(--latte-mantle) !important;
+  --toolbar-field-focus-background-color: var(--latte-mauve) !important;
+  --toolbar-field-focus-color: var(--latte-text) !important;
+
+  --newtab-background-color: var(--latte-crust) !important;
+
+  --lwt-background-alignment: right top, center top, left top;
+  --lwt-background-tiling: repeat-y, repeat-y, repeat-y;
+
+  --tabpanel-background-color: var(--latte-crust) !important;
+}
+
+/* New Tab */
+:root[lwt-newtab-brighttext].theme-light {
+  --newtab-background-color: var(--latte-crust) !important;
+  --newtab-background-color-secondary: var(--latte-base) !important;
+  --newtab-text-primary-color: var(--latte-text) !important;
+  --newtab-primary-action-background: var(--latte-sapphire) !important;
+  --newtab-primary-action-background-pocket: var(--latte-sapphire) !important;
+  --newtab-primary-element-text-color: var(--latte-crust) !important;
+  --newtab-wordmark-color: var(--latte-text) !important;
+  --newtab-status-success: var(--latte-green) !important;
+}
+
 /* Tab bar */
 @-moz-document url-prefix("about:devtools-toolbox") {
   :root.theme-light {

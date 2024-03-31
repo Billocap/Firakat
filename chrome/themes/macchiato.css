@@ -1,5 +1,46 @@
 @import "../catppuccin/macchiato.css";
 
+/* App Bar */
+:root.theme-dark {
+  --lwt-accent-color: var(--macchiato-crust) !important;
+  --lwt-text-color: var(--macchiato-text) !important;
+  --lwt-additional-images: url("../decals/macchiato/decal-right.png"),
+    url("../decals/macchiato/decal-center.png"),
+    url("../decals/macchiato/decal-left.png");
+
+  --arrowpanel-background: var(--macchiato-base) !important;
+  --arrowpanel-color: var(--macchiato-text) !important;
+
+  --toolbar-field-background-color: var(--macchiato-crust) !important;
+  --toolbar-bgcolor: var(--macchiato-base) !important;
+  --toolbar-color: var(--macchiato-mauve) !important;
+  --toolbar-field-color: var(--macchiato-text) !important;
+  --toolbar-field-border-color: var(--macchiato-mantle) !important;
+  --toolbar-field-focus-background-color: var(--macchiato-mauve) !important;
+  --toolbar-field-focus-color: var(--macchiato-text) !important;
+
+  --newtab-background-color: var(--macchiato-crust) !important;
+
+  --lwt-background-alignment: right top, center top, left top;
+  --lwt-background-tiling: repeat-y, repeat-y, repeat-y;
+
+  --tabpanel-background-color: var(--macchiato-crust) !important;
+}
+
+/* New Tab */
+:root[lwt-newtab-brighttext].theme-dark {
+  --newtab-background-color: var(--macchiato-crust) !important;
+  --newtab-background-color-secondary: var(--macchiato-base) !important;
+  --newtab-text-primary-color: var(--macchiato-text) !important;
+  --newtab-primary-action-background: var(--macchiato-sapphire) !important;
+  --newtab-primary-action-background-pocket: var(
+    --macchiato-sapphire
+  ) !important;
+  --newtab-primary-element-text-color: var(--macchiato-crust) !important;
+  --newtab-wordmark-color: var(--macchiato-text) !important;
+  --newtab-status-success: var(--macchiato-green) !important;
+}
+
 /* Tab bar */
 @-moz-document url-prefix("about:devtools-toolbox") {
   :root.theme-dark {

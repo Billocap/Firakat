@@ -23,3 +23,7 @@ Melatonin is a Firefox theme based on Catppuccin and Firacode.
 ### Mocha
 
 **Coming soon**
+
+## Contribute
+
+[Figma](https://www.figma.com/file/4qVic7G3aOoO2LU7iKntRJ/Firakat?type=design&node-id=33%3A114&mode=design&t=4NnteTIZ0fWfeimM-1)

@@ -1,0 +1,301 @@
+@import "../catppuccin/latte.css";
+
+/* Tab bar */
+@-moz-document url-prefix("about:devtools-toolbox") {
+  :root.theme-light {
+    /* ------ Colors -------- */
+    --theme-comment: var(--latte-subtext) !important;
+    --theme-sidebar-background: var(--latte-mantle) !important;
+    --theme-tab-toolbar-background: var(--latte-crust) !important;
+
+    /* Button Colors */
+    --theme-button-background: var(--latte-base) !important;
+    --theme-button-active-background: var(--latte-surface0) !important;
+
+    /* Selection Colors */
+    --theme-selection-background: var(--latte-surface0) !important;
+    --theme-selection-background-hover: var(--latte-surface0) !important;
+    --theme-selection-focus-background: var(--latte-surface1) !important;
+    --theme-selection-color: var(--latte-text) !important;
+
+    /* Popup Colors */
+    --theme-popup-background: var(--latte-base) !important;
+    --theme-popup-color: var(--latte-text) !important;
+    --theme-popup-border-color: var(--latte-crust) !important;
+    --theme-popup-dimmed: var(--latte-subtext) !important;
+
+    /* Stack Trace */
+    --theme-stack-trace-text: var(--latte-red) !important;
+
+    /* Selected Element Color */
+    --theme-select-background: var(--latte-overlay0) !important;
+    --theme-select-color: var(--latte-text) !important;
+    --theme-select-hover-border-color: var(--latte-overlay1) !important;
+
+    /* Console Colors */
+    --theme-warning-background: var(--latte-yellow-10) !important;
+    --theme-warning-border: var(--latte-yellow-50) !important;
+    --theme-warning-color: var(--latte-yellow) !important;
+
+    --console-error-background: var(--latte-red-10) !important;
+    --console-error-border: var(--latte-red-50) !important;
+    --console-error-color: var(--latte-red) !important;
+
+    /* Accordion Colors */
+    --theme-accordion-header-background: var(--latte-base) !important;
+    --theme-accordion-header-hover: var(--latte-surface0) !important;
+
+    /* Body Colors */
+    --theme-body-background: var(--latte-base) !important;
+    --theme-body-emphasized-background: var(--latte-surface0) !important;
+    --theme-body-alternate-emphasized-background: var(
+      --latte-surface1
+    ) !important;
+
+    /* Contrast Colors */
+    --theme-contrast-background: var(--latte-crust) !important;
+    --theme-contrast-background-alpha: var(--latte-surface0) !important;
+    --theme-contrast-color: var(--latte-text) !important;
+    --theme-contrast-border: var(--latte-yellow) !important;
+
+    /* Splitter Colors */
+    --theme-splitter-color: var(--latte-crust) !important;
+    --theme-emphasized-splitter-color: var(--latte-surface0) !important;
+    --theme-emphasized-splitter-color-hover: var(--latte-surface1) !important;
+
+    /* Toolbar Colors */
+    --tab-line-hover-color: var(--latte-overlay0) !important;
+    --tab-line-selected-color: var(--latte-mauve) !important;
+    --theme-toolbar-background: var(--latte-crust) !important;
+    --theme-toolbar-color: var(--latte-overlay0) !important;
+    --theme-toolbar-selected-color: var(--latte-mauve) !important;
+    --theme-toolbar-highlighted-color: var(--latte-green) !important;
+    --theme-toolbar-background-hover: var(--latte-base) !important;
+    --theme-toolbar-background-alt: var(--latte-base) !important;
+    --theme-toolbar-background-highlighted: var(--latte-mauve) !important;
+    --theme-toolbar-error-background: var(--latte-red) !important;
+    --theme-toolbar-hover: var(--latte-surface0) !important;
+    --theme-toolbar-hover-active: var(--latte-surface1) !important;
+    --theme-toolbar-separator: transparent !important;
+
+    /* Toolbar Button Colors */
+    --theme-toolbarbutton-background: var(--latte-crust) !important;
+    --theme-toolbarbutton-color: var(--latte-overlay0) !important;
+    --theme-toolbarbutton-hover-background: var(--latte-base) !important;
+    --theme-toolbarbutton-checked-background: var(--latte-base) !important;
+    --theme-toolbarbutton-checked-color: var(--latte-sapphire) !important;
+    --theme-toolbarbutton-checked-hover-background: var(
+      --latte-surface0
+    ) !important;
+    --theme-toolbarbutton-checked-hover-color: var(--latte-sapphire) !important;
+    --theme-toolbarbutton-active-background: var(--latte-base) !important;
+    --theme-toolbarbutton-active-color: var(--latte-mauve) !important;
+
+    --toolbarbutton-background: var(--latte-crust) !important;
+    --toolbarbutton-hover-background: var(--latte-base) !important;
+    --toolbarbutton-focus-background: var(--latte-surface0) !important;
+    --toolbarbutton-focus-color: var(--latte-mauve) !important;
+    --toolbarbutton-checked-background: var(--latte-base) !important;
+    --toolbarbutton-checked-focus-background: var(--latte-sapphire) !important;
+    --toolbarbutton-checked-color: var(--latte-text) !important;
+
+    /* General UI */
+    --theme-tab-toolbar-background: var(--latte-mantle) !important;
+    --theme-selection-background: var(--latte-surface0) !important;
+    --theme-selection-color: var(--latte-text) !important;
+
+    /* Icon Colors */
+    --theme-icon-color: var(--latte-text) !important;
+    --theme-icon-dimmed-color: var(--latte-overlay0) !important;
+    --theme-icon-checked-color: var(--latte-sapphire) !important;
+    --theme-icon-error-color: var(--latte-red) !important;
+    --theme-icon-warning-color: var(--latte-yellow) !important;
+
+    /* Text Colors */
+    --theme-body-color: var(--latte-text) !important;
+    --theme-body-color-alt: var(--latte-subtext) !important;
+    --theme-content-color1: var(--latte-overlay0) !important;
+    --theme-content-color2: var(--latte-overlay1) !important;
+    --theme-content-color3: var(--latte-overlay2) !important;
+    --theme-link-color: var(--latte-sapphire) !important;
+    --theme-text-color-alt: var(--latte-subtext) !important;
+    --theme-text-color-inactive: var(--latte-overlay0) !important;
+    --theme-text-color-error: var(--latte-red) !important;
+    --theme-text-color-strong: var(--latte-lavender) !important;
+
+    /* Code Highlight Colors */
+    --theme-highlight-blue: var(--latte-blue) !important;
+    --theme-highlight-purple: var(--latte-mauve) !important;
+    --theme-highlight-pink: var(--latte-pink) !important;
+    --theme-highlight-red: var(--latte-red) !important;
+    --theme-highlight-orange: var(--latte-peach) !important;
+    --theme-highlight-lightorange: var(--latte-rosewater) !important;
+    --theme-highlight-green: var(--latte-green) !important;
+    --theme-highlight-bluegrey: var(--latte-lavender) !important;
+    --theme-highlight-yellow: var(--latte-yellow) !important;
+
+    /* Timing Graphs Colors */
+    --theme-graphs-purple: var(--latte-mauve) !important;
+    --theme-graphs-yellow: var(--latte-yellow) !important;
+    --theme-graphs-orange: var(--latte-peach) !important;
+    --theme-graphs-grey: var(--latte-overlay0) !important;
+    --theme-graphs-full-red: var(--latte-red) !important;
+  }
+
+  .toolbox-tabs .devtools-tab.selected {
+    background-color: var(--latte-base) !important;
+  }
+}
+
+/* Tab contents */
+@-moz-document url-prefix("chrome://devtools/content/")
+{
+  :root.theme-light {
+    --theme-body-font-size: 10px !important;
+    --theme-code-font-size: 10px !important;
+
+    /* ------ Colors -------- */
+    --theme-comment: var(--latte-subtext) !important;
+    --theme-sidebar-background: var(--latte-mantle) !important;
+    --theme-tab-toolbar-background: var(--latte-crust) !important;
+
+    /* Button Colors */
+    --theme-button-background: var(--latte-base) !important;
+    --theme-button-active-background: var(--latte-surface0) !important;
+
+    /* Selection Colors */
+    --theme-selection-background: var(--latte-surface0) !important;
+    --theme-selection-background-hover: var(--latte-surface0) !important;
+    --theme-selection-focus-background: var(--latte-surface1) !important;
+    --theme-selection-color: var(--latte-text) !important;
+
+    /* Popup Colors */
+    --theme-popup-background: var(--latte-base) !important;
+    --theme-popup-color: var(--latte-text) !important;
+    --theme-popup-border-color: var(--latte-crust) !important;
+    --theme-popup-dimmed: var(--latte-subtext) !important;
+
+    /* Stack Trace */
+    --theme-stack-trace-text: var(--latte-red) !important;
+
+    /* Selected Element Color */
+    --theme-select-background: var(--latte-overlay0) !important;
+    --theme-select-color: var(--latte-text) !important;
+    --theme-select-hover-border-color: var(--latte-overlay1) !important;
+
+    /* Console Colors */
+    --theme-warning-background: var(--latte-yellow-10) !important;
+    --theme-warning-border: var(--latte-yellow-50) !important;
+    --theme-warning-color: var(--latte-yellow) !important;
+
+    --console-error-background: var(--latte-red-10) !important;
+    --console-error-border: var(--latte-red-50) !important;
+    --console-error-color: var(--latte-red) !important;
+
+    /* Accordion Colors */
+    --rule-header-background-color: var(--latte-base) !important;
+    --theme-accordion-header-background: var(--latte-base) !important;
+    --theme-accordion-header-hover: var(--latte-surface0) !important;
+
+    /* Body Colors */
+    --theme-body-background: var(--latte-base) !important;
+    --theme-body-emphasized-background: var(--latte-surface0) !important;
+    --theme-body-alternate-emphasized-background: var(
+      --latte-surface1
+    ) !important;
+
+    /* Contrast Colors */
+    --theme-contrast-background: var(--latte-crust) !important;
+    --theme-contrast-background-alpha: var(--latte-surface0) !important;
+    --theme-contrast-color: var(--latte-text) !important;
+    --theme-contrast-border: var(--latte-yellow) !important;
+
+    /* Splitter Colors */
+    --theme-splitter-color: var(--latte-crust) !important;
+    --theme-emphasized-splitter-color: var(--latte-surface0) !important;
+    --theme-emphasized-splitter-color-hover: var(--latte-surface1) !important;
+
+    /* Toolbar Colors */
+    --tab-line-hover-color: var(--latte-overlay0) !important;
+    --tab-line-selected-color: var(--latte-mauve) !important;
+    --theme-toolbar-background: var(--latte-crust) !important;
+    --theme-toolbar-color: var(--latte-overlay0) !important;
+    --theme-toolbar-selected-color: var(--latte-mauve) !important;
+    --theme-toolbar-highlighted-color: var(--latte-green) !important;
+    --theme-toolbar-background-hover: var(--latte-base) !important;
+    --theme-toolbar-background-alt: var(--latte-base) !important;
+    --theme-toolbar-background-highlighted: var(--latte-mauve) !important;
+    --theme-toolbar-error-background: var(--latte-red) !important;
+    --theme-toolbar-hover: var(--latte-surface0) !important;
+    --theme-toolbar-hover-active: var(--latte-surface1) !important;
+    --theme-toolbar-separator: transparent !important;
+
+    /* Toolbar Button Colors */
+    --theme-toolbarbutton-background: var(--latte-crust) !important;
+    --theme-toolbarbutton-color: var(--latte-overlay0) !important;
+    --theme-toolbarbutton-hover-background: var(--latte-base) !important;
+    --theme-toolbarbutton-checked-background: var(--latte-base) !important;
+    --theme-toolbarbutton-checked-color: var(--latte-sapphire) !important;
+    --theme-toolbarbutton-checked-hover-background: var(
+      --latte-surface0
+    ) !important;
+    --theme-toolbarbutton-checked-hover-color: var(--latte-sapphire) !important;
+    --theme-toolbarbutton-active-background: var(--latte-base) !important;
+    --theme-toolbarbutton-active-color: var(--latte-mauve) !important;
+
+    --toolbarbutton-background: var(--latte-crust) !important;
+    --toolbarbutton-hover-background: var(--latte-base) !important;
+    --toolbarbutton-focus-background: var(--latte-surface0) !important;
+    --toolbarbutton-focus-color: var(--latte-mauve) !important;
+    --toolbarbutton-checked-background: var(--latte-base) !important;
+    --toolbarbutton-checked-focus-background: var(--latte-sapphire) !important;
+    --toolbarbutton-checked-color: var(--latte-text) !important;
+
+    /* General UI */
+    --theme-tab-toolbar-background: var(--latte-mantle) !important;
+    --theme-selection-background: var(--latte-surface0) !important;
+    --theme-selection-color: var(--latte-text) !important;
+
+    /* Icon Colors */
+    --theme-icon-color: var(--latte-text) !important;
+    --theme-icon-dimmed-color: var(--latte-overlay0) !important;
+    --theme-icon-checked-color: var(--latte-sapphire) !important;
+    --theme-icon-error-color: var(--latte-red) !important;
+    --theme-icon-warning-color: var(--latte-yellow) !important;
+
+    /* Text Colors */
+    --theme-body-color: var(--latte-text) !important;
+    --theme-body-color-alt: var(--latte-subtext) !important;
+    --theme-content-color1: var(--latte-overlay0) !important;
+    --theme-content-color2: var(--latte-overlay1) !important;
+    --theme-content-color3: var(--latte-overlay2) !important;
+    --theme-link-color: var(--latte-sapphire) !important;
+    --theme-text-color-alt: var(--latte-subtext) !important;
+    --theme-text-color-inactive: var(--latte-overlay0) !important;
+    --theme-text-color-error: var(--latte-red) !important;
+    --theme-text-color-strong: var(--latte-lavender) !important;
+
+    /* Code Highlight Colors */
+    --theme-highlight-blue: var(--latte-blue) !important;
+    --theme-highlight-purple: var(--latte-mauve) !important;
+    --theme-highlight-pink: var(--latte-pink) !important;
+    --theme-highlight-red: var(--latte-red) !important;
+    --theme-highlight-orange: var(--latte-peach) !important;
+    --theme-highlight-lightorange: var(--latte-rosewater) !important;
+    --theme-highlight-green: var(--latte-green) !important;
+    --theme-highlight-bluegrey: var(--latte-lavender) !important;
+    --theme-highlight-yellow: var(--latte-yellow) !important;
+
+    /* Timing Graphs Colors */
+    --theme-graphs-purple: var(--latte-mauve) !important;
+    --theme-graphs-yellow: var(--latte-yellow) !important;
+    --theme-graphs-orange: var(--latte-peach) !important;
+    --theme-graphs-grey: var(--latte-overlay0) !important;
+    --theme-graphs-full-red: var(--latte-red) !important;
+  }
+
+  .tabs .tabs-menu-item.is-active,
+  .source-tabs .source-tab.active {
+    background-color: var(--latte-base) !important;
+  }
+}

@@ -4,9 +4,9 @@
 :root.theme-light {
   --lwt-accent-color: var(--latte-crust) !important;
   --lwt-text-color: var(--latte-text) !important;
-  --lwt-additional-images: url("../decals/latte/decal-right.png") !important,
-    url("../decals/latte/decal-center.png") !important,
-    url("../decals/latte/decal-left.png") !important;
+  --lwt-additional-images: url("../decals/latte/decal-right.png"),
+    url("../decals/latte/decal-center.png"),
+    url("../decals/latte/decal-left.png");
 
   --arrowpanel-background: var(--latte-base) !important;
   --arrowpanel-color: var(--latte-text) !important;

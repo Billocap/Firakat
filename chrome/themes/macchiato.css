@@ -1,7 +1,7 @@
 @import "../catppuccin/macchiato.css";
 
 /* App Bar */
-:root.theme-dark {
+:root {
   --lwt-accent-color: var(--macchiato-crust) !important;
   --lwt-text-color: var(--macchiato-text) !important;
   --lwt-additional-images: url("../decals/macchiato/decal-right.png"),
@@ -28,7 +28,7 @@
 }
 
 /* New Tab */
-:root[lwt-newtab-brighttext].theme-dark {
+:root[lwt-newtab-brighttext] {
   --newtab-background-color: var(--macchiato-crust) !important;
   --newtab-background-color-secondary: var(--macchiato-base) !important;
   --newtab-text-primary-color: var(--macchiato-text) !important;

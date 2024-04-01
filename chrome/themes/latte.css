@@ -1,7 +1,7 @@
 @import "../catppuccin/latte.css";
 
 /* App Bar */
-:root.theme-light {
+:root {
   --lwt-accent-color: var(--latte-crust) !important;
   --lwt-text-color: var(--latte-text) !important;
   --lwt-additional-images: url("../decals/latte/decal-right.png"),
@@ -28,7 +28,7 @@
 }
 
 /* New Tab */
-:root[lwt-newtab-brighttext].theme-light {
+:root[lwt-newtab-brighttext] {
   --newtab-background-color: var(--latte-crust) !important;
   --newtab-background-color-secondary: var(--latte-base) !important;
   --newtab-text-primary-color: var(--latte-text) !important;
